@@ -125,5 +125,3 @@ class CombinedLoss(nn.Module):
         pcc = 1 - torch.mean(pearson)
         loss = (mse * self.alpha) + (pcc * self.beta)
         return loss
-
-
